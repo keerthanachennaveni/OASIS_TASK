@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+</head>
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+     body {
+        font-size: 17px;
+        background-color: #111;
+        color: #fff;
+    }
+    
+    #main{
+        position:absolute;
+        /* top: 50%; */
+        /* left: 50%; */
+         transition: translate(-50%, 50%);
+        width: 100%;
+        height: 97%;
+        overflow-y: scroll; 
+    }
+
+
+    p {
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    details {
+        width: 100%;
+        font-family: sans-serif;
+        border: 2px solid rgb(240, 11, 202);
+        padding: 5px;
+    }
+
+    details p {
+        padding: 20px;
+        color: #000;
+        background-color: #fff;
+
+    }
+
+    summary {
+        padding: 20px;
+        border: 1px solid rgb(0, 255, 157);
+        outline: none;
+        cursor: pointer;
+        display: flex;
+
+    }
+
+    section {
+        max-width: 80%;
+        width: 100%;
+    }
+
+    a {
+        color: rgb(47, 161, 220);
+        text-decoration: none;
+
+    }
+
+    h3 {
+        margin: 10px;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 5px solid rgb(248, 227, 188);
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 10px #272525;
+    }
+
+    figcaption {
+        margin: 20px;
+        font-size: 20px;
+        width: 55%;
+
+    }
+
+    #title {
+        color: rgb(125, 170, 133);
+        /* margin-bottom: 10px; */
+
+    }
+
+    b {
+        color: azure;
+    }
+
+    #tribute-info {
+        width: 50%;
+    }
+  #city{
+    margin: auto;
+
+  }
+    @media screen and (max-width:600px) {
+        figcaption {
+            width: 88%;
+            font-size: 15px;
+        }
+
+        #tribute-info {
+            width: 100%;
+        }
+
+        #main {
+            margin-top: 0;
+        }
+
+    } 
+</style> 
+
+<body>
+    <center>
+        <main id="main">
+            <h1 id="title">ELON MUSK</h1>
+            <p>A MAN'S VISION TO CHANGE THE WORLD</p>
+            <div class="img-div">
+                <figure>
+                    <img src="musk.jpg" alt="" id="image" width="600" height="600">
+                    <figcaption id="img-caption"><q><b>Elon Reeve Musk </b>(born June 28, 1971) is a businessman and
+                            investor.
+                            Musk is the founder, chairman, CEO and chief technology officer of SpaceX,angel investor,
+                            CEO,
+                            product architect and former chairman of Tesla, Inc.owner, chairman and CTO of X Corp.
+                            founder of the Boring Company and xAI, co-founder of Neuralink and OpenAI and president of
+                            the Musk Foundation.
+                        </q>
+                    </figcaption>
+
+
+                </figure>
+            </div>
+            <section id="tribute-info">
+                <details>
+                    <summary>What is Elon Musk known for?</summary>
+                    <p>Elon Musk is an engineer, entrepreneur, philanthropist, businessman and investor. Musk is The man
+                        who behind SpaceX, Tesla,
+                        SolarCity, OpenAI,and TheBoring Company.Moreover, those are only small pieces of his grand-scale
+                        puzzle
+                        that leads to a better future and the colonization of Mars.
+
+                    </p>
+                </details>
+                <details>
+                    <summary>Some Future Timelines of Elon Musk</summary>
+                    <p>2024 : Blast people on the first human voyage to Mars.</p>
+                    <p>2025 : Put boots on Mars.
+
+                        <img src="2024.2.jpg" id="city" alt="" >
+                    </p>
+                    <!-- <p>2028 : Finish building Mars Base Alpha.</p> -->
+                    <p>Perhaps the 2030s : Construction of the first city on Mars.
+                        <img src="city.2.jpg" alt="" width="200" height="200">
+                    </p>
+                    <p>2100s onward : Terraform Mars into an Earth-like planet.
+                        <img src="mars.jpg" alt="">
+                    </p>
+                </details>
+                <details>
+                    <summary>What is Elon Musk's net worth?</summary>
+                    <p>Bloomberg and Forbes rank him as the world's richest person, estimating his net worth
+                        to be between $198bn (£162bn) and $220bn (£180bn), as of November 2023.</p>
+                </details>
+                <h3>
+                    If you want to read more about this remarkable human being, you can check the
+                    <a id="link" href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">wikipedia</a>
+                </h3>
+            </section>
+        </main>
+
+    </center>
+</body>
+
+</html>
